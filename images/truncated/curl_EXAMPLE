@@ -4,7 +4,7 @@
 
 #Then, just copy paste this into your terminal and specify an output file. if you want something other than 'data.json'
 
-curl -v -X GET "https://westus2.api.cognitive.microsoft.com/customvision/v3.3/Training/projects/{PROJECT_ID}/images/tagged?iterationId={ITERATION_ID(should be Workspace}&tagIds=Broken%20region&tagIds=Impurity%20defect&tagIds=Intrinsic%20defect&orderBy=newest&take=50&skip=0" -H "Training-key: {KEY}" --data-ascii "{body}" -o data.json
+curl -v -X GET "https://westus2.api.cognitive.microsoft.com/customvision/v3.3/Training/projects/{PROJECT_ID}/images/tagged?iterationId={ITERATION_ID(should be Workspace}&tagIds=Broken%20region&tagIds=Impurity%20defect&tagIds=Intrinsic%20defect&orderBy=newest&take=50&skip=0" -H "Training-key: {KEY}"   -o data.json
 
 
 
@@ -17,4 +17,4 @@ curl -v -X GET "https://westus2.api.cognitive.microsoft.com/customvision/v3.3/Tr
 #uploading to Jon's project testbed
 
 
-curl -v -X POST "https://westus2.api.cognitive.microsoft.com/customvision/v3.3/Training/projects/24552152-8b49-48b5-a6f2-c6d8e380b8e4/images/files" -H "Content-Type: application/json" -H "Training-key: e72770d64f3b4e6f8f44c54bb9f497db" -F "images=@Christian_labels-images.json"
+curl -v -X POST "https://westus2.api.cognitive.microsoft.com/customvision/v3.3/Training/projects/24552152-8b49-48b5-a6f2-c6d8e380b8e4/images/files" -H "Content-Type: application/json" -H "Training-key:e72770d64f3b4e6f8f44c54bb9f497db" -F "images=@Christian_labels-images.json"
