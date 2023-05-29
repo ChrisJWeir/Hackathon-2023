@@ -11,8 +11,11 @@ members = ['Mark', 'Christian', 'Jon', 'Chris', 'Quentin']
 divvy = len(images)/ len(members)
 print(divvy)
 
-for member in members:
-    dir = pwd + '{}/'.format(member)
-    print("moving truncated images to {}'s directory".format(member))
-    for i in range(int(divvy)):
-        shutil.copy(pwd+images[i], dir)
+print(len(images))
+
+
+#for member in members:
+#    dir = pwd + '{}/'.format(member)
+#    print("moving truncated images to {}'s directory".format(member))
+#    for i in range(int(divvy)):
+#        shutil.copy(pwd+images[i], dir)
