@@ -13,6 +13,8 @@ print(divvy)
 
 print(len(images))
 
+#for image in images:
+    
 
 #for member in members:
 #    dir = pwd + '{}/'.format(member)
