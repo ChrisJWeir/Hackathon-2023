@@ -1,0 +1,2 @@
+ 	BX	BY	Width	Height
+1	289	206	222	305
